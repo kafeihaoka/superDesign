@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{408:function(e,o){e.exports={content:["article",["p","The second article which is posted by BiSheng."],["hr"],["p","Good bye!"]],meta:{title:"Good bye!",publishDate:"2015-05-05T00:00:00.000Z",filename:"posts/good-bye.md"}}}}]);
