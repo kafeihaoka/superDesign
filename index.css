@@ -12987,6 +12987,9 @@ h4 {
   border-top-color: #1890ff;
   border-left-color: #1890ff;
 }
+.colourContainer .colourBlockLi .colourTotal {
+  text-align: justify;
+}
 
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
@@ -13079,6 +13082,9 @@ h4 {
 #nprogress .spinner-icon {
   border-top-color: #1890ff;
   border-left-color: #1890ff;
+}
+.colourContainer .colourBlockLi .colourTotal {
+  text-align: justify;
 }
 html,
 body {
