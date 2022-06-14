@@ -31,7 +31,7 @@ class Home extends React.PureComponent {
     const { pathname } = this.props.location;
     const isZhCN = utils.isZhCN(pathname);
     return (
-      <DocumentTitle title="cig-data react components">
+      <DocumentTitle title="super design react components">
         <div className="home-wrapper">
           <div className="nav-wrapper">
             <ScrollLink to="banner" showHeightActive={['100%', '30%']} toHash={false} />

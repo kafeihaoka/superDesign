@@ -1,8 +1,8 @@
 ---
-order: 1
+order: 2
 title: 
   zh-CN: 拖拽块
-  en-US: react-dnd-block
+  en-US: 'react-dnd-block'
 ---
 ## zh-CN
 支持拖拽标签功能。
@@ -36,21 +36,23 @@ class Test extends React.Component {
 	    const { data1, data2, data3 } = this.state;
 		return (
             <div>
-				<p>-----------------------  例1  -------------------------------</p>
+				<h3 className="title">例1</h3>
 				<DNDBlock
 					data={data1}
 					onChange={this.changeBlock.bind(this,1)}
 				/>
-				<p>-----------------------  例2  -------------------------------</p>
-				<DNDBlock
-					width={'80%'}
-					data={data2}
-					tagBorderRadius={['6px','6px']}
-					clearButtonBorderRadius={'6px'}
-					tagColor={'rgb(16, 142, 233)'}
-					onChange={this.changeBlock.bind(this,2)}
-				/>
-				<p>------------------------  例3  ------------------------------</p>
+				<h3 className="title">例2</h3>
+				<div className="dndContent">
+					<DNDBlock
+						width={'80%'}
+						data={data2}
+						tagBorderRadius={['6px','6px']}
+						clearButtonBorderRadius={'6px'}
+						tagColor={'rgb(16, 142, 233)'}
+						onChange={this.changeBlock.bind(this,2)}
+					/>
+				</div>	
+				<h3 className="title">例3</h3>
 				<DNDBlock
 					width={'360px'}
 					data={data3}
@@ -69,6 +71,11 @@ ReactDOM.render(<Test />, mountNode);
 ```
 
 ```css
-
-
+.title{
+	padding: 6px;
+}
+.dndContent {
+    z-index: 100;
+    position: relative;
+}
 ```

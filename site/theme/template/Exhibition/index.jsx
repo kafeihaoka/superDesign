@@ -45,7 +45,7 @@ class Exhibition extends React.Component {
             {listChildren}
           </TweenOne>
         </div>
-        <DocumentTitle title="组件示例 - cig-data" />
+        <DocumentTitle title="组件示例 - super Design" />
       </div>
     );
   }

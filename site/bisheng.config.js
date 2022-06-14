@@ -1,4 +1,3 @@
-
 const path = require('path');
 const replaceLib = require('antd-tools/lib/replaceLib');
 
@@ -38,7 +37,7 @@ module.exports = {
       动效: 0,
       Motion: 0,
     },
-    github:'https://github.com/kafeihaoka/superDesign'
+    github: 'https://github.com/kafeihaoka',
   },
   htmlTemplate: './site/theme/static/index.html',
   port: 8111,

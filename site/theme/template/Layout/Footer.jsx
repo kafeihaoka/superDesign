@@ -13,9 +13,9 @@ class Footer extends React.PureComponent {
           <Row>
             <Col md={6} sm={24} xs={24}>
               <div className="footer-center">
-                <h2>cig-data</h2>
+                <h2>super design</h2>
                 <div>
-                  <a target="_blank " href="https://github.com/cig-data">
+                  <a target="_blank " href="https://github.com/kafeihaoka/superDesign">
                     <FormattedMessage id="app.footer.repo" />
                   </a>
                 </div>
@@ -40,7 +40,7 @@ class Footer extends React.PureComponent {
               <div className="footer-center">
                 <h2><FormattedMessage id="app.footer.community" /></h2>
                 <div>
-                  <a target="_blank" rel="noopener" href="https://github.com/cig-data/issues">
+                  <a target="_blank" rel="noopener" href="https://github.com/kafeihaoka/superDesign/issues">
                     <FormattedMessage id="app.footer.issues" />
                   </a>
                 </div>
@@ -58,20 +58,8 @@ class Footer extends React.PureComponent {
             <Col md={6} sm={24} xs={24}>
               <div className="footer-center">
                 <h2>
-                  {/* <img
-                    className="title-icon"
-                    src="https://gw.alipayobjects.com/zos/rmsportal/nBVXkrFdWHxbZlmMbsaH.svg"
-                    alt="AFX Cloud"
-                  /> */}
                   <FormattedMessage id="app.footer.more-product" />
                 </h2>
-                {/* <div>
-                  <a target="_blank" rel="noopener noreferrer" href="https://yuque.com/">
-                    <FormattedMessage id="app.footer.yuque" />
-                  </a>
-                  <span> - </span>
-                  <FormattedMessage id="app.footer.yuque.slogan" />
-                </div> */}
               </div>
             </Col>
           </Row>
@@ -80,7 +68,7 @@ class Footer extends React.PureComponent {
           Made
           by
           <a target="_blank" rel="noopener noreferrer" href="#">
-            cig-data
+            super design
           </a>
         </div>
       </footer>

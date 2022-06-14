@@ -2,11 +2,19 @@
 order: 2
 title:
   zh-CN: 拖拽块
-  en-US: react-dnd-block
-category: 
-  zh-CN: react-dnd-block
-  en-US: react-dnd-block
+  en-US: 'react-dnd-block'
+category:
+  zh-CN: pc
+  en-US: pc
 ---
+
+## 怎么使用
+
+### 安装
+
+```bash
+$ npm i react-dnd-block -S
+```
 
 ## 组件基本参数说明
 

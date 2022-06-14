@@ -1,8 +1,8 @@
 ---
-order: 0
+order: 1
 title: 
   zh-CN: 彩色多维度选择块
-  en-US: react-colour-block
+  en-US: 'react-colour-block'
 ---
 ## zh-CN
 支持彩色块维度选择功能，配合图表效果更加。

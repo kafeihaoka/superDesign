@@ -50,7 +50,7 @@ class Details extends React.Component {
       title, subtitle,
     } = meta;
     return (
-      <DocumentTitle title={`${subtitle || title[locale] || ''} - cig-data`}>
+      <DocumentTitle title={`${subtitle || title[locale] || ''} - super design`}>
         <div className="page-wrapper">
           <TweenOne animation={{ y: 30, opacity: 0, type: 'from' }} className="page">
             <article className={`markdown ${className}`}>

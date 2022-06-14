@@ -2,8 +2,17 @@
 order: 1
 title:
   zh-CN: 彩色块
-  en-US: react-colour-block
+  en-US: 'react-colour-block'
+category:
+  zh-CN: pc
+  en-US: pc
 ---
+
+### 安装
+
+```bash
+$ npm i react-colour-block -S
+```
 
 ## 组件基本参数说明
 
