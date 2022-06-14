@@ -24,7 +24,6 @@
     (function () {
       // 优先级提高到所有静态资源的前面，语言不对，加载其他静态资源没意义
       var pathname = location.pathname;
-      
       function isZhCN(pathname) {
         return /-cn\/?$/.test(pathname);
       }
@@ -40,13 +39,17 @@
         }
         return pathname + '-cn';
       }
-      var custompPath = pathname.includes('superDesign')?pathname.split('superDesign/').join(''):pathname;
-      
-      if ( (custompPath === '/' || custompPath === '/index-cn')) {
+      var projectName = '';
+      var custompPath = pathname;
+      if (pathname.includes('superDesign')) {
+        projectName = 'superDesign';
+        custompPath = pathname.split('superDesign')[1];
+      }
+      if ( (custompPath === '' || custompPath === '/' || custompPath === '/index-cn')) {
         var lang = (window.localStorage && localStorage.getItem('locale')) || (navigator.language && navigator.language.toLowerCase() === 'zh-cn' ? 'zh-CN' : 'en-US');
         // safari is 'zh-cn', while other browser is 'zh-CN';
-        if ((lang === 'zh-CN') !== isZhCN(pathname)) {
-          location.pathname = getLocalizedPathname(pathname, lang === 'zh-CN');
+        if ((lang === 'zh-CN') !== isZhCN(custompPath)) {
+          location.pathname = projectName + getLocalizedPathname(custompPath, lang === 'zh-CN');
         }
       }
       document.documentElement.className += isZhCN(pathname) ? 'zh-cn' : 'en-us';
