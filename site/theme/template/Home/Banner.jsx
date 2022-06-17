@@ -13,6 +13,14 @@ import * as utils from '../utils';
 TweenOne.plugins.push(SvgMorphPlugin);
 
 export default class Banner extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      dynamicNumber: 0,
+    }
+    this.timer = null
+  }
+
   static propTypes = {
     className: PropTypes.string,
   };
@@ -21,10 +29,29 @@ export default class Banner extends React.PureComponent {
     className: 'banner',
   };
 
+  getRandomNumber = (max) => {
+    this.setState({
+      dynamicNumber: Math.floor(Math.random() * max)
+    })
+  }
+
+  componentDidMount() {
+    this.getRandomNumber(2)
+    this.timer = setInterval(() => {
+      this.getRandomNumber(4)
+    }, 15000)
+  }
+
+  componentWillUnmount () {
+    if (this.timer) clearInterval(this.timer)
+    this.timer = null
+  }
+
   render() {
     const { isZhCN } = this.props;
+    const { dynamicNumber } = this.state;
     return (
-      <ScrollElement id="banner" className={`${this.props.className}-wrapper`}>
+      <ScrollElement id="banner" className={`${this.props.className}-wrapper banner-bg-${dynamicNumber}`}>
         <svg className={`${this.props.className}-bg-center`} width="100%" viewBox="0 0 1200 800">
           <TweenOne
             component="circle"
